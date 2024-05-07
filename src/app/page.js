@@ -1,7 +1,9 @@
+import Footer from "@/components/Footer";
 import "./globals.css";
 import Dashboard from "@/components/Dashboard";
 import Profile from "@/components/Profile";
 import Sales from "@/components/Sales";
+import { Fragment } from "react";
 
 const DUMMY_DATA = [
   {
@@ -44,11 +46,14 @@ const DUMMY_DATA = [
 
 const Home = () => {
   return (
-    <main className="container">
-      <Dashboard />
-      <Sales userData={DUMMY_DATA} />
-      <Profile userData={DUMMY_DATA} />
-    </main>
+    <Fragment>
+      <main className="container">
+        <Dashboard />
+        <Sales userData={DUMMY_DATA} />
+        <Profile userData={DUMMY_DATA} />
+      </main>
+      <Footer />
+    </Fragment>
   );
 }
 

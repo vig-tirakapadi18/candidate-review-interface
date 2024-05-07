@@ -337,3 +337,27 @@ body {
 .question > * {
     margin-block: 10px;
 }
+
+footer {
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 7px;
+    margin-inline: 1rem;
+}
+
+.copyright,
+.links a {
+    color: gray;
+}
+
+.copyright {
+    position: relative;
+    left: 250px;
+}
+
+.links a {
+    text-decoration: none;
+    margin-inline: 10px;
+}
